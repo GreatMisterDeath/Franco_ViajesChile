@@ -3,3 +3,41 @@
     width: 13;
     border-bottom: 2px solid #0DCAF0;
 }
+
+h1.c_font_header
+{
+    font-family: 'Roboto', 'Arial' !important;
+    font-weight: 300 !important;
+}
+
+h1.c_font_footer
+{
+    font-family: 'Roboto', 'Arial' !important;
+    font-weight: 500 !important;
+}
+
+h2
+{
+    font-family: 'Poppins', 'Arial' !important;
+    font-weight: 400 !important;
+}
+
+p
+{
+    font-family: 'Poppins', 'Arial' !important;
+    font-weight: 200 !important;
+}
+
+.c_card_svg_icon
+{
+    color: #FFFFFF;
+    padding: 8px;
+}
+
+.c_remove_line
+{
+  text-decoration: none !important;
+  border: 0px !important;
+  outline: none;
+  border-width: 0px;
+}
