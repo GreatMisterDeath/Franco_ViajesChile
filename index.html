@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Juego de caracteres -->
+        <meta charset="utf-8">
+        <!-- Responsibidad -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Estilos y scripts de Bootstrap mediante CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- Estilos personales -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" type="image/png" href="assets/img/favicon.svg">
+        <title>Viajes chile</title>
+    </head>
+    <body>
+        <!-- Barra de navegacion -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container-fluid p-2">
+                <img src="assets/img/viajes.svg" class="mx-1" width="48px" height="48px" alt="viajeschile">
+                <h1 class="text-light">Viajes Chile</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav justify-content-end mx-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Carrusel -->
+        <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="carousel1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="carousel2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="carousel3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <!-- Seccion quienes somos -->
+        <section class="container-fluid bg-dark">
+            <h2 class="p-4 text-light text-center">¿ Quienes somos ?</h2>
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-10">
+                        <div class="c_line mb-4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid p-5">
+                <div class="row justify-content-center">
+                    <article class="col-4 px-5">
+                        <div class="row justify-content-center">
+                            <img src="assets/img/viajes.svg" class="mb-2 p-1 bg-info" width="48px" height="48px" alt="carousel2">
+                        </div>
+                        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </article>
+                    <article class="col-4 px-5">
+                        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="row justify-content-center">
+                            <img src="assets/img/viajes.svg" class="mt-2 p-1 bg-info" width="48px" height="48px" alt="carousel2">
+                        </div>
+                    </article>
+                    <article class="col-4 px-5">
+                        <div class="row justify-content-center">
+                            <img src="assets/img/viajes.svg" class="mb-2 p-1 bg-info" width="48px" height="48px" alt="carousel2">
+                        </div>
+                        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Seccion destacados -->
+        <section class="container-fluid pb-5 bg-dark">
+            <h2 class="p-4 text-light text-center bg-dark">Destacados</h2>
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-10">
+                        <div class="c_line mb-4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex flex-row justify-content-center pt-4 px-4">
+                <div class="col-xl py-4">
+                    <article class="card">
+                        <img src="assets/img/card1.jpg" class="card-img-top" alt="card1">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xl py-4">
+                    <article class="card">
+                        <img src="assets/img/card2.jpg" class="card-img-top" alt="card2">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xl py-4">
+                    <article class="card">
+                        <img src="assets/img/card3.jpg" class="card-img-top" alt="card3">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xl py-4">
+                    <article class="card">
+                        <img src="assets/img/card4.jpg" class="card-img-top" alt="card4">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Contacto -->
+        <section class="container-fluid bg-dark">
+            <h2 class="pb-4 text-light text-center">Contacto</h2>
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-10">
+                        <div class="c_line mb-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer viajes chile -->
+        <footer class="container-fluid d-flex flex-row justify-content-center bg-info p-4">
+            <footer class="container-fluid d-flex flex-row justify-content-center bg-info">
+                <h1 class="text-light">VIAJES CHILE</h1>
+            </footer>
+            <footer class="container-fluid d-flex flex-row justify-content-center bg-info">
+                <h1 class="text-light">VIAJES CHILE</h1>
+            </footer>
+        </footer>
+    </body>
+</html>
