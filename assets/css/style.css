@@ -3,12 +3,6 @@ html
     scroll-behavior: smooth;
 }
 
-.c_line
-{
-    width: 13;
-    border-bottom: 2px solid #0DCAF0;
-}
-
 h1.c_font_header
 {
     font-family: 'Roboto', 'Arial' !important;
@@ -33,7 +27,24 @@ p
     font-weight: 200 !important;
 }
 
-.c_card_svg_icon
+.navbar-nav .nav-item .nav-link
+{
+    color: #FFFFFF;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link
+{
+    color: #00AAFF;
+}
+
+.c_line
+{
+    width: 13;
+    border-bottom: 2px solid #0DCAF0;
+}
+
+.c_svg_icon
 {
     color: #FFFFFF;
     padding: 8px;
