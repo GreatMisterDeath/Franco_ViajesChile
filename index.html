@@ -19,12 +19,12 @@
         <link rel="icon" type="image/png" href="assets/img/favicon.svg">
         <title>Viajes chile</title>
     </head>
-    <body>
+    <body class="bg-dark">
         <!-- Barra de navegacion -->
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
-            <div class="container-fluid p-2">
-                <img src="assets/img/viajes.svg" width="48px" height="48px" alt="viajeschile">
-                <h1 class="text-light c_font_header">Viajes Chile</h1>
+            <div class="container-fluid">
+                <img src="assets/img/viajes.svg" width="32px" height="32px" alt="viajeschile">
+                <h2 class="text-light c_font_header my-4" style="margin-left: 16px;"> Viajes Chile</h2>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,13 +34,13 @@
                             <a class="nav-link text-light" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Quienes somos</a>
+                            <a class="nav-link text-light" href="#quienes_somos">Quienes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Destacados</a>
+                            <a class="nav-link text-light" href="#destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Contacto</a>
+                            <a class="nav-link text-light" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -66,28 +66,26 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Anterior</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Siguiente</span>
             </button>
         </section>
         <!-- Seccion quienes somos -->
-        <section class="container-fluid bg-dark">
-            <h2 class="p-4 text-light text-center">¿ Quienes somos ?</h2>
+        <section class="container-fluid pb-4 d-none d-sm-block d-sm-none d-md-block">
+            <h2 class="p-4 text-light text-center" id="quienes_somos">¿ Quienes somos ?</h2>
             <!-- Dibujado de linea -->
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-11">
-                        <div class="c_line mb-4"></div>
-                    </div>
+            <div class="d-flex justify-content-center">
+                <div style="width: 90vw;">
+                    <div class="c_line mb-4"></div>
                 </div>
             </div>
             <!---->
-            <div class="container-fluid p-4">
-                <div class="row justify-content-center">
-                    <article class="col-md px-5">
+            <div class="d-flex flex-row justify-content-center pt-4 px-4">
+                <div class="row" style="width: 90vw">
+                    <article class="col-md">
                         <div class="row">
                             <i class="fas fa-plane fa-2x c_card_svg_icon bg-info d-flex justify-content-center"></i>
                         </div>
@@ -99,7 +97,7 @@
                             <i class="fas fa-mountain fa-2x c_card_svg_icon bg-info d-flex justify-content-center"></i>
                         </div>
                     </article>
-                    <article class="col-md px-5">
+                    <article class="col-md">
                         <div class="row">
                             <i class="fas fa-route fa-2x c_card_svg_icon bg-info d-flex justify-content-center"></i>
                         </div>
@@ -109,14 +107,12 @@
             </div>
         </section>
         <!-- Seccion destacados -->
-        <section class="container-fluid bg-dark pb-4">
-            <h2 class="p-4 text-light text-center">Destacados</h2>
+        <section class="container-fluid pb-4">
+            <h2 class="p-4 text-light text-center" id="destacados">Destacados</h2>
             <!-- Dibujado de linea -->
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-11">
-                        <div class="c_line mb-4"></div>
-                    </div>
+            <div class="d-flex justify-content-center">
+                <div style="width: 90vw;">
+                    <div class="c_line mb-4"></div>
                 </div>
             </div>
             <!---->
@@ -163,19 +159,17 @@
             </div>
         </section>
         <!-- Contacto -->
-        <section class="container-fluid bg-dark pb-4">
-            <h2 class="pb-4 text-light text-center">Contacto</h2>
+        <section class="container-fluid pb-4">
+            <h2 class="pb-4 text-light text-center" id="contacto">Contacto</h2>
             <!-- Dibujado de linea -->
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-11">
-                        <div class="c_line mb-4"></div>
-                    </div>
+            <div class="d-flex justify-content-center">
+                <div style="width: 90vw;">
+                    <div class="c_line mb-4"></div>
                 </div>
             </div>
             <!---->
             <article class="d-flex justify-content-center">
-                <form class="bg-info p-4" style="width: 256px">
+                <form class="bg-info p-4" style="width: 512px">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label text-white">Email</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -189,17 +183,17 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck2">
                         <label class="form-check-label text-white" for="exampleCheck1">Recibir promociones por correo</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Inscribirse</button>
                 </form>
             </article>
         </section>
         <!-- Footer viajes chile -->
-        <footer class="container-fluid d-flex flex-row justify-content-center bg-info p-4">
+        <footer class="container-fluid bg-info p-4">
             <div class="row">
-                <div class="col-sm container-fluid d-flex flex-row justify-content-center bg-success">
+                <div class="col-sm d-flex flex-row justify-content-center ">
                     <h1 class="text-light c_font_footer mt-2">VIAJES CHILE</h1>
                 </div>
-                <div class="col-sm container-fluid d-flex flex-row justify-content-center bg-info">
+                <div class="col-sm d-flex flex-row justify-content-center ">
                     <a href="https://github.com/" target="_blank" class="c_remove_line"><i class="fab fa-github-square fa-3x c_card_svg_icon bg-info d-flex justify-content-center"></i>
                     <a href="https://cl.linkedin.com//" target="_blank" class="c_remove_line"><i class="fab fa-linkedin fa-3x c_card_svg_icon bg-info d-flex justify-content-center"></i>
                     <a href="https://twitter.com/?lang=es" target="_blank" class="c_remove_line"><i class="fab fa-twitter-square fa-3x c_card_svg_icon bg-info d-flex justify-content-center"></i>
