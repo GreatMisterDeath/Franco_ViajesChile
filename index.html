@@ -20,21 +20,20 @@
         <title>Viajes chile</title>
     </head>
     <body class="bg-dark">
-        <script src="assets/js/main_script.js" type="text/javascript"></script>
         <!-- Barra de navegacion -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-info" id="inicio">
+        <header class="navbar navbar-expand-lg navbar-dark bg-info" id="inicio">
             <div class="container-fluid">
                 <img src="assets/img/viajes.svg" width="32px" height="32px" alt="viajeschile-icon">
                 <h2 class="text-light c_font_header" style="margin-left: 16px; margin-top: 8px;"> Viajes Chile</h2>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav justify-content-end mx-5">
                         <li class="nav-item">
                             <a class="nav-link fs-5" href="#">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-none d-sm-block d-sm-none d-md-block">
                             <a class="nav-link fs-5" href="#quienes_somos">Quienes somos</a>
                         </li>
                         <li class="nav-item">
@@ -45,10 +44,10 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         <!-- Carrusel -->
-        <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <article id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -73,7 +72,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Siguiente</span>
             </button>
-        </section>
+        </article>
         <!-- Seccion quienes somos, esto no se muestra en pantallas extra small o small -->
         <section class="container-fluid pb-4 d-none d-sm-block d-sm-none d-md-block">
             <h2 class="p-4 text-light text-center" id="quienes_somos">¿ Quienes somos ?</h2>
@@ -121,7 +120,7 @@
                 <div class="row" style="width: 90vw">
                     <div class="col-xl py-4">
                         <article class="card">
-                            <img src="assets/img/card1.jpg" class="card-img-top" alt="card1">
+                            <img src="assets/img/card1.jpg" class="card-img-top" alt="card1" data-bs-toggle="tooltip" data-bs-placement="top" title="Visita nuestros hermosos paisajes, inscribete !!!">
                             <div class="card-body bg-info">
                                 <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
                                 <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -130,7 +129,7 @@
                     </div>
                     <div class="col-xl py-4">
                         <article class="card">
-                            <img src="assets/img/card2.jpg" class="card-img-top" alt="card2">
+                            <img src="assets/img/card2.jpg" class="card-img-top" alt="card2" data-bs-toggle="tooltip" data-bs-placement="top" title="Visita nuestros hermosos paisajes, inscribete !!!">
                             <div class="card-body bg-info">
                                 <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
                                 <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -139,7 +138,7 @@
                     </div>
                     <div class="col-xl py-4">
                         <article class="card">
-                            <img src="assets/img/card3.jpg" class="card-img-top" alt="card3">
+                            <img src="assets/img/card3.jpg" class="card-img-top" alt="card3" data-bs-toggle="tooltip" data-bs-placement="top" title="Visita nuestros hermosos paisajes, inscribete !!!">
                             <div class="card-body bg-info">
                                 <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
                                 <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -148,7 +147,7 @@
                     </div>
                     <div class="col-xl py-4">
                         <article class="card">
-                            <img src="assets/img/card4.jpg" class="card-img-top" alt="card4">
+                            <img src="assets/img/card4.jpg" class="card-img-top" alt="card4" data-bs-toggle="tooltip" data-bs-placement="top" title="Visita nuestros hermosos paisajes, inscribete !!!">
                             <div class="card-body bg-info">
                                 <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
                                 <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -159,8 +158,8 @@
             </div>
             </div>
         </section>
-        <!-- Contacto -->
-        <section class="container-fluid pb-4">
+        <!-- Formulario contacto -->
+        <form class="container-fluid pb-4">
             <h2 class="pb-4 text-light text-center" id="contacto">Contacto</h2>
             <!-- Dibujado de linea -->
             <div class="d-flex justify-content-center">
@@ -169,24 +168,24 @@
                 </div>
             </div>
             <!---->
-            <article class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center">
                 <div class="d-flex justify-content-center" style="width: 90vw;">
                     <div class="typeform-widget" data-url="https://form.typeform.com/to/FbgrsSSF?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
                 </div>
-            </article>
-        </section>
+            </div>
+        </form>
         <!-- Footer viajes chile -->
         <footer class="container-fluid bg-info">
             <div class="row p-2">
                 <div class="col-sm d-flex justify-content-center">
                     <h1 class="text-light c_font_footer mt-2">VIAJES CHILE</h1>
                 </div>
-                <div class="col-sm d-flex justify-content-center">
+                <nav class="col-sm d-flex justify-content-center">
                     <a href="https://github.com/" target="_blank" class="c_remove_line"><i class="fab fa-github-square fa-3x c_svg_icon bg-info d-flex justify-content-center"></i>
                     <a href="https://cl.linkedin.com//" target="_blank" class="c_remove_line"><i class="fab fa-linkedin fa-3x c_svg_icon bg-info d-flex justify-content-center"></i>
                     <a href="https://twitter.com/?lang=es" target="_blank" class="c_remove_line"><i class="fab fa-twitter-square fa-3x c_svg_icon bg-info d-flex justify-content-center"></i>
                     <a href="https://es-la.facebook.com/" target="_blank" class="c_remove_line"><i class="fab fa-facebook-square fa-3x c_svg_icon bg-info d-flex justify-content-center"></i>
-                </div>
+                </nav>
             </div>
         </footer>
     </body>
